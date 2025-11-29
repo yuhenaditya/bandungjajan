@@ -1,0 +1,50 @@
+[
+  {
+    "nama": "Seblak",
+    "kategori": "makanan",
+    "gambar": "assets/images/makanan/seblak.jpg",
+    "deskripsi": "Seblak adalah makanan pedas khas Bandung yang terbuat dari kerupuk basah (kerupuk aci) dimasak dengan bumbu cabai, bawang, kencur, dan tambahan topping seperti telur, ceker ayam, atau sosis.",
+    "sejarah": "Asal-usul seblak berasal dari masyarakat Sunda di Bandung sekitar tahun 2000-an. Awalnya jajanan pinggir jalan murah meriah, kini jadi ikon kuliner nasional. Populer karena rasa pedas gurih yang bikin nagih.",
+    "asal": "Daerah Ciwidey dan pinggiran Bandung Selatan"
+  },
+  {
+    "nama": "Cireng",
+    "kategori": "makanan",
+    "gambar": "assets/images/makanan/cireng.jpg",
+    "deskripsi": "Cireng (aci digoreng) adalah camilan renyah dari tepung tapioka (aci) yang dibumbui, digoreng hingga krispi, sering disajikan dengan bumbu rujak atau sambal.",
+    "sejarah": "Sudah ada sejak era 1980-an di Bandung sebagai makanan rakyat. Terinspirasi dari dimsum Cina, tapi diadaptasi dengan bahan lokal Sunda. Kini variasinya banyak, seperti cireng isi atau premium.",
+    "asal": "Pasar malam dan kaki lima di seluruh Bandung"
+  },
+  {
+    "nama": "Batagor",
+    "kategori": "makanan",
+    "gambar": "assets/images/makanan/batagor.jpg",
+    "deskripsi": "Batagor (baso tahu goreng) adalah bakso tahu yang digoreng, disiram bumbu kacang pedas manis, khas Jawa Barat.",
+    "sejarah": "Muncul di Bandung tahun 1960-an dari pedagang kaki lima. Singkatan dari 'baso tahu goreng', awalnya camilan sederhana untuk pekerja pabrik.",
+    "asal": "Jalan Braga dan sekitar Pasupati"
+  },
+  {
+    "nama": "Surabi",
+    "kategori": "makanan",
+    "gambar": "assets/images/makanan/surabi.jpg",
+    "deskripsi": "Surabi (serabi) adalah kue tradisional dari tepung beras dan santan, dibakar di atas arang, sering ditaburi kinca (gula merah cair) atau oncom.",
+    "sejarah": "Warisan budaya Sunda sejak abad ke-19, terinspirasi dari makanan kerajaan Pajajaran. Dulu hidangan bangsawan, kini jajanan pasar.",
+    "asal": "Kampung Cireundeu dan pasar tradisional Bandung"
+  },
+  {
+    "nama": "Bajigur",
+    "kategori": "minuman",
+    "gambar": "assets/images/minuman/bajigur.jpg",
+    "deskripsi": "Bajigur adalah minuman hangat dari santan, gula aren, jahe, dan serai, disajikan dengan kolang-kaling atau tape.",
+    "sejarah": "Minuman tradisional Sunda sejak zaman kerajaan, digunakan untuk menghangatkan tubuh di udara dingin Bandung. Nama 'bajigur' berarti 'cukup untuk hidup'.",
+    "asal": "Pegunungan sekitar Lembang"
+  },
+  {
+    "nama": "Bandrek",
+    "kategori": "minuman",
+    "gambar": "assets/images/minuman/bandrek.jpg",
+    "deskripsi": "Bandrek adalah wedang jahe hangat dengan gula aren, kayu manis, cengkeh, dan serai, sering ditambah kacang atau rempah lain.",
+    "sejarah": "Asli dari Sunda sejak abad ke-16, dibuat untuk obat tradisional dan penghangat. Populer di Bandung karena cuaca sejuknya.",
+    "asal": "Desa-desa pegunungan Bandung Utara"
+  }
+]

@@ -4,105 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pangan Lokal Bandung</title>
-  <!-- Tailwind CDN -->
+  
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Google -->
+  
+  <!-- Font Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
-<body class="bg-amber-50 text-gray-800">
+<body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col">
 
   <!-- Navbar -->
   <nav class="bg-yellow-600 text-white sticky top-0 z-50 shadow-lg">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Bandung Pangan Lokal</h1>
-      <div class="space-x-6">
-        <a href="#" class="hover:underline">Beranda</a>
-        <a href="#" class="hover:underline">Peta</a>
-        <a href="#" class="hover:underline">Daftar Kuliner</a>
+      <div class="space-x-8 text-lg">
+        <a href="index.html" class="hover:underline font-semibold">Beranda</a>
+        <a href="about.html" class="hover:underline">Tentang</a>
+        <a href="#daftarMakanan" class="hover:underline">Kuliner</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-yellow-500 to-orange-600 text-white py-24">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-5xl font-bold mb-4">Jelajahi Kekayaan Kuliner Bandung</h2>
-      <p class="text-xl">Dari Seblak sampai Surabi, semua ada di sini!</p>
+  <section class="bg-gradient-to-r from-yellow-500 to-orange-600 text-white py-28">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Jelajahi Kekayaan Kuliner Bandung</h2>
+      <p class="text-xl md:text-2xl">Dari Seblak sampai Bandrek, semua ada di sini!</p>
     </div>
   </section>
 
   <!-- Search Bar -->
-  <section class="container mx-auto px-4 py-8">
-    <div class="max-w-2xl mx-auto">
-      <input type="text" id="searchInput" placeholder="Cari makanan atau minuman lokal Bandung..."
-        class="w-full px-6 py-4 rounded-full shadow-lg text-lg focus:outline-none focus:ring-4 focus:ring-yellow-400">
+  <section class="container mx-auto px-6 py-10">
+    <div class="max-w-3xl mx-auto">
+      <input type="text" id="searchInput" placeholder="🔍 Cari makanan atau minuman lokal Bandung..."
+        class="w-full px-8 py-5 rounded-full shadow-xl text-lg focus:outline-none focus:ring-4 focus:ring-yellow-400 transition">
     </div>
   </section>
 
-  <!-- Peta Bandung (Embed Google Maps) -->
-  <section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8">Peta Lokasi Jajanan Kaki Lima Bandung</h2>
-    <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
-      <!-- Ganti src dengan link embed Google Maps kamu nanti -->
-      <iframe class="w-full h-full rounded-xl" 
-        src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK" 
-        allowfullscreen="" loading="lazy"></iframe>
+  <!-- Peta Bandung (Pusat Kota) -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-4xl font-bold text-center mb-10 text-amber-800">Peta Lokasi Jajanan Kaki Lima Bandung</h2>
+    <div class="rounded-2xl overflow-hidden shadow-2xl">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.606174995!2d107.629!3d-6.972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e45f1b1c4b0d%3A0x8f6f3b5f5e5f5e5f!2sBandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1735660000000!5m2!1sid!2sid"
+        width="100%" 
+        height="500" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
+    <p class="text-center text-gray-600 mt-4 text-sm">Zoom ke pusat kota Bandung (Alun-Alun, Braga, Dago)</p>
   </section>
 
-  <!-- Daftar Makanan -->
-  <section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-10">Daftar Kuliner Lokal</h2>
-    <div id="daftarMakanan" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Kartu makanan akan di-generate otomatis oleh JS -->
+  <!-- Daftar Kuliner Lokal -->
+  <section class="container mx-auto px-6 py-12" id="daftarMakanan">
+    <h2 class="text-4xl font-bold text-center mb-12 text-amber-800">Daftar Kuliner Lokal Bandung</h2>
+    <div id="makananContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- Kartu akan diisi otomatis oleh JavaScript -->
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-yellow-700 text-white py-8 text-center">
-    <p>© 2025 Pangan Lokal Bandung – Dibuat dengan ❤️ di VSCode</p>
+  <footer class="bg-amber-800 text-white py-8 mt-auto">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg">© 2025 Pangan Lokal Bandung – Dibuat dengan ❤️ menggunakan HTML, Tailwind & JavaScript</p>
+    </div>
   </footer>
 
-  <!-- Data makanan (bisa dipindah ke file JSON nanti) -->
+  <!-- JavaScript -->
   <script>
-    const makanan = [
-      { nama: "Seblak", kategori: "makanan", gambar: "assets/images/makanan/seblak.jpg", deskripsi: "Seblak adalah makanan khas Bandung yang terbuat dari kerupuk basah yang dimasak dengan bumbu pedas...", sejarah: "Mulai populer sekitar tahun 2000-an di kota Bandung..." },
-      { nama: "Surabi", kategori: "makanan", gambar: "assets/images/makanan/surabi.jpg", deskripsi: "Surabi atau serabi adalah jajanan tradisional Sunda...", sejarah: "Sudah ada sejak zaman kolonial Belanda..." },
-      { nama: "Bajigur", kategori: "minuman", gambar: "assets/images/makanan/bajigur.jpg", deskripsi: "Minuman hangat khas Sunda berbahan santan, gula aren, dan jahe...", sejarah: "..." },
-      { nama: "Cireng", kategori: "makanan", gambar: "assets/images/makanan/cireng.jpg", deskripsi: "...", sejarah: "..." },
-      // tambah lagi sesuai kebutuhan
-    ];
+    let semuaMakanan = [];
 
-    // Generate kartu
-    const container = document.getElementById('daftarMakanan');
-    makanan.forEach(item => {
-      const card = `
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition" onclick="bukaDetail('${item.nama}')">
-          <img src="${item.gambar}" alt="${item.nama}" class="w-full h-48 object-cover bg-gray-200 border-b-4 border-yellow-500">
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-yellow-700">${item.nama}</h3>
-            <p class="text-gray-600 mt-2">${item.deskripsi.substring(0,100)}...</p>
-          </div>
-        </div>`;
-      container.innerHTML += card;
-    });
+    // Load data dari JSON
+    fetch('assets/data/makanan.json')
+      .then(res => res.json())
+      .then(data => {
+        semuaMakanan = data;
+        tampilkanMakanan(semuaMakanan);
+      })
+      .catch(err => {
+        console.error("Gagal load makanan.json:", err);
+        document.getElementById('makananContainer').innerHTML = 
+          `<p class="text-center col-span-full text-red-600">File makanan.json belum ada atau rusak. Buat folder assets/data/makanan.json dulu ya!</p>`;
+      });
 
-    // Fungsi buka detail (bisa pakai modal atau halaman terpisah)
-    function bukaDetail(nama) {
-      const data = makanan.find(m => m.nama === nama);
-      alert(`Detail ${data.nama}\n\n${data.deskripsi}\n\nSejarah:\n${data.sejarah}`);
-      // Nanti bisa diganti modal Bootstrap atau halaman detail.html
+    // Fungsi tampilkan kartu makanan
+    function tampilkanMakanan(data) {
+      const container = document.getElementById('makananContainer');
+      container.innerHTML = '';
+
+      data.forEach(item => {
+        const card = `
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer"
+               onclick="bukaDetail('${item.nama}')">
+            <img src="${item.gambar}" 
+                 alt="${item.nama}"
+                 onerror="this.src='https://placehold.co/400x300/fff3cd/92400e?text=${item.nama}&font=poppins'"
+                 class="w-full h-64 object-cover border-b-8 border-yellow-500">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-amber-700 mb-2">${item.nama}</h3>
+              <span class="inline-block bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full mb-3">
+                ${item.kategori.toUpperCase()}
+              </span>
+              <p class="text-gray-700 text-sm leading-relaxed">${item.deskripsi.substring(0,120)}...</p>
+            </div>
+          </div>`;
+        container.innerHTML += card;
+      });
     }
 
-    // Search functionality
-    document.getElementById('searchInput).addEventListener('input', function(e) {
+    // Detail makanan (sementara pakai alert, nanti diganti modal)
+    function bukaDetail(nama) {
+      const item = semuaMakanan.find(m => m.nama === nama);
+      if (item) {
+        alert(`
+${item.nama.toUpperCase()}
+
+${item.deskripsi}
+
+Sejarah & Asal-usul:
+${item.sejarah}
+
+Lokasi populer: ${item.asal}
+        `.trim());
+      }
+    }
+
+    // Search real-time
+    document.getElementById('searchInput').addEventListener('input', function(e) {
       const query = e.target.value.toLowerCase();
-      container.innerHTML = '';
-      makanan.filter(m => m.nama.toLowerCase().includes(query))
-             .forEach(item => { /* sama seperti generate di atas */ });
+      const hasil = semuaMakanan.filter(item => 
+        item.nama.toLowerCase().includes(query) ||
+        item.kategori.toLowerCase().includes(query) ||
+        item.deskripsi.toLowerCase().includes(query) ||
+        item.sejarah.toLowerCase().includes(query)
+      );
+      tampilkanMakanan(hasil);
     });
   </script>
 </body>

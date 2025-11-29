@@ -1,0 +1,130 @@
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffbeb; /* amber-50 */
+  color: #1f2937;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TIPOGRAFI ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #78350f; /* amber-900 */
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.125rem; }
+h3 { font-size: 1.75rem; }
+
+/* ===== WARNA UTAMA ===== */
+.bg-primary   { background-color: #f59e0b; }   /* yellow-500 */
+.bg-secondary { background-color: #ea580c; }   /* orange-600 */
+.text-primary { color: #f59e0b; }
+.text-secondary { color: #ea580c; }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #d97706; /* yellow-600 */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #fffbeb;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(to right, #f59e0b, #ea580c);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+/* ===== CARD MAKANAN ===== */
+.card-makanan {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-makanan:hover {
+  transform: translateY(-10px);
+}
+
+.card-makanan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #f59e0b;
+}
+
+/* ===== CONTAINER & GRID ===== */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.grid-makanan {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== SEARCH BAR ===== */
+.search-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.search-box:focus {
+  ring: 4px solid #f59e0b;
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #92400e; /* amber-800 */
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  .hero { padding: 4rem 0; }
+}
