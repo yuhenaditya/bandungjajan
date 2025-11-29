@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang - Pangan Lokal Bandung</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Navbar (sama persis dengan index.html) -->
+  <nav class="bg-yellow-600 text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Bandung Pangan Lokal</h1>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="about.html" class="hover:underline font-bold underline">Tentang</a>
+        <a href="index.html#daftarMakanan" class="hover:underline">Daftar Kuliner</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero About -->
+  <section class="bg-gradient-to-br from-yellow-500 to-orange-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-4">Tentang Proyek Ini</h2>
+      <p class="text-xl max-w-3xl mx-auto">
+        Website sederhana untuk melestarikan dan mempromosikan kekayaan kuliner lokal Kota Bandung
+      </p>
+    </div>
+  </section>
+
+  <!-- Konten Utama -->
+  <section class="container mx-auto px-6 py-16 flex-1">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Teks -->
+      <div class="space-y-6">
+        <h3 class="text-3xl font-bold text-yellow-700">Mengapa Website Ini Dibuat?</h3>
+        <p class="text-lg leading-relaxed">
+          Kota Bandung terkenal dengan surganya kuliner, terutama pangan lokal dan jajanan kaki lima yang sudah ada turun-temurun. 
+          Sayangnya, banyak generasi muda yang mulai melupakan asal-usul dan cerita di balik makanan-makanan tersebut.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Website ini hadir sebagai <strong>media dokumentasi digital</strong> sekaligus panduan bagi wisatawan dan warga lokal 
+          untuk mengenal lebih dalam makanan khas Bandung — mulai dari sejarah, bahan-bahan, hingga lokasi terbaik menikmatinya.
+        </p>
+        
+        <div class="bg-yellow-100 p-6 rounded-xl border-l-4 border-yellow-600">
+          <p class="font-semibold text-yellow-900">
+            “Makanan bukan sekadar mengenyangkan, tapi juga membawa cerita dan identitas budaya.”
+          </p>
+        </div>
+      </div>
+
+      <!-- Foto/Gambar Ilustrasi (ganti sesuka hati) -->
+      <div>
+        <img src="https://placehold.co/600x500/fff3cd/8b5a2b?text=Kuliner+Bandung" 
+             alt="Kuliner Bandung" 
+             class="rounded-2xl shadow-2xl w-full object-cover border-8 border-white">
+      </div>
+    </div>
+
+    <!-- Tim / Pembuat -->
+    <div class="mt-20 text-center bg-white rounded-2xl shadow-xl p-10 max-w-2xl mx-auto">
+      <h3 class="text-3xl font-bold text-yellow-700 mb-6">Dibuat Oleh</h3>
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 bg-gray-200 rounded-full border-4 border-yellow-500 mb-4 
+                        flex items-center justify-center text-5xl font-bold text-gray-500">
+          <!-- Ganti dengan foto kamu atau inisial -->
+          ?
+        </div>
+        <h4 class="text-2xl font-bold">Nama Kamu</h4>
+        <p class="text-gray-600">Mahasiswa / Pecinta Kuliner Bandung</p>
+        <p class="mt-4 text-gray-500">
+          Dibuat dengan ❤️ menggunakan HTML, CSS (Tailwind), dan JavaScript<br>
+          Dihosting gratis di <strong>GitHub Pages</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-700 text-white py-8 text-center mt-auto">
+    <p>© 2025 Pangan Lokal Bandung – Tugas / Proyek Pribadi</p>
+  </footer>
+
+</body>
+</html>
