@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Kuliner - Pangan Lokal Bandung</title>
+  
+  <!-- Tailwind + AOS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 20px 40px rgba(0,0,0,0.15)!important; }
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col" style="opacity:0; transition:opacity 0.6s">
+
+  <!-- Navbar -->
+  <nav class="bg-yellow-600 text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-lg font-bold">Bandung Pangan Lokal</h1>
+      <div class="space-x-4 text-sm">
+        <a href="../index.html" class="hover:underline font-semibold">Beranda</a>
+        <a href="../about.html" class="hover:underline">Tentang</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Detail -->
+  <section class="container mx-auto px-6 py-10 flex-1">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Tombol Kembali -->
+      <a href="../index.html" class="inline-block mb-6 text-yellow-600 hover:underline text-sm font-semibold">
+        ← Kembali ke Daftar Kuliner
+      </a>
+
+      <div data-aos="fade-up" class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+
+          <!-- Foto Besar -->
+          <div data-aos="fade-right" data-aos-delay="200">
+            <img id="fotoBesar" src="" alt="" 
+                 class="w-full h-64 sm:h-80 md:h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-yellow-500">
+          </div>
+
+          <!-- Teks Detail -->
+          <div data-aos="fade-left" data-aos-delay="300" class="p-6 sm:p-8 space-y-6">
+            
+            <div>
+              <h1 id="namaMakanan" class="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-700 leading-tight"></h1>
+              <span id="kategori" class="inline-block mt-3 bg-amber-100 text-amber-800 text-xs sm:text-sm px-4 py-2 rounded-full font-semibold"></span>
+            </div>
+
+            <div>
+              <h2 class="text-lg sm:text-xl font-bold text-amber-800 mb-2">Deskripsi</h2>
+              <p id="deskripsi" class="text-gray-700 text-sm sm:text-base leading-relaxed"></p>
+            </div>
+
+            <div>
+              <h2 class="text-lg sm:text-xl font-bold text-amber-800 mb-2">Sejarah & Asal-usul</h2>
+              <p id="sejarah" class="text-gray-700 text-sm sm:text-base leading-relaxed"></p>
+            </div>
+
+            <div class="pt-4 border-t-2 border-amber-200">
+              <h2 class="text-lg sm:text-xl font-bold text-amber-800 mb-2">Lokasi Populer</h2>
+              <p id="asal" class="text-amber-700 font-semibold text-sm sm:text-base"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-800 text快速-white py-6 mt-auto">
+    <div class="container mx-auto px-6 text-center text-sm">
+      <p>© 2025 Pangan Lokal Bandung</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    AOS.init({ once: true, duration: 800 });
+
+    // Smooth masuk halaman
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '1';
+    });
+
+    // Baca parameter ?id=
+    const urlParams = new URLSearchParams(window.location.search);
+    const namaMakanan = urlParams.get('id');
+
+    if (!namaMakanan) {
+      document.body.innerHTML = `<div class="text-center py-20"><h1 class="text-3xl">Makanan tidak ditemukan</h1></div>`;
+    } else {
+      fetch('../assets/data/makanan.json')
+        .then(res => res.json())
+        .then(data => {
+          const item = data.find(m => m.nama === namaMakanan);
+          if (item) {
+            document.getElementById('namaMakanan').textContent = item.nama;
+            document.getElementById('kategori').textContent = item.kategori.toUpperCase();
+            document.getElementById('deskripsi').textContent = item.deskripsi;
+            document.getElementById('sejarah').textContent = item.sejarah;
+            document.getElementById('asal').textContent = item.asal;
+            document.getElementById('fotoBesar').src = item.gambar;
+            document.getElementById('fotoBesar').onerror = () => {
+              document.getElementById('fotoBesar').src = `https://placehold.co/800x600/fff3cd/92400e?text=${item.nama}&font=poppins`;
+            };
+            document.title = item.nama + " - Pangan Lokal Bandung";
+          } else {
+            document.body.innerHTML = `<div class="text-center py-20"><h1 class="text-3xl">Makanan "${namaMakanan}" tidak ditemukan</h1></div>`;
+          }
+        })
+        .catch(() => {
+          alert("Gagal memuat data. Pastikan file makanan.json ada!");
+        });
+    }
+  </script>
+</body>
+</html>

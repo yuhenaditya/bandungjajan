@@ -4,81 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tentang - Pangan Lokal Bandung</title>
-  <!-- Tailwind CDN -->
+  
+  <!-- Tailwind + AOS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Poppins -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col">
+<body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col" style="opacity:0; transition:opacity 0.6s">
 
-  <!-- Navbar (sama persis dengan index.html) -->
+  <!-- Navbar (sama persis dengan index & detail) -->
   <nav class="bg-yellow-600 text-white sticky top-0 z-50 shadow-lg">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Bandung Pangan Lokal</h1>
-      <div class="space-x-6">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-lg font-bold">Bandung Pangan Lokal</h1>
+      <div class="space-x-4 text-sm">
         <a href="index.html" class="hover:underline">Beranda</a>
         <a href="about.html" class="hover:underline font-bold underline">Tentang</a>
-        <a href="index.html#daftarMakanan" class="hover:underline">Daftar Kuliner</a>
+        <a href="index.html#daftarMakanan" class="hover:underline">Kuliner</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero About -->
-  <section class="bg-gradient-to-br from-yellow-500 to-orange-600 text-white py-20">
+  <section data-aos="fade-down" class="bg-gradient-to-br from-yellow-500 to-orange-600 text-white py-16">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-4">Tentang Proyek Ini</h2>
-      <p class="text-xl max-w-3xl mx-auto">
-        Website sederhana untuk melestarikan dan mempromosikan kekayaan kuliner lokal Kota Bandung
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Tentang Proyek Ini</h2>
+      <p class="text-base sm:text-lg max-w-3xl mx-auto opacity-95">
+        Website sederhana untuk melestarikan & mempromosikan kekayaan kuliner lokal Kota Bandung
       </p>
     </div>
   </section>
 
   <!-- Konten Utama -->
-  <section class="container mx-auto px-6 py-16 flex-1">
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <section data-aos="fade-up" class="container mx-auto px-6 py-10 flex-1">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
       
       <!-- Teks -->
-      <div class="space-y-6">
-        <h3 class="text-3xl font-bold text-yellow-700">Mengapa Website Ini Dibuat?</h3>
-        <p class="text-lg leading-relaxed">
-          Kota Bandung terkenal dengan surganya kuliner, terutama pangan lokal dan jajanan kaki lima yang sudah ada turun-temurun. 
-          Sayangnya, banyak generasi muda yang mulai melupakan asal-usul dan cerita di balik makanan-makanan tersebut.
+      <div data-aos="fade-right" data-aos-delay="100" class="space-y-5">
+        <h3 class="text-2xl sm:text-3xl font-bold text-amber-700">Mengapa Website Ini Dibuat?</h3>
+        <p class="text-sm sm:text-base leading-relaxed text-gray-700">
+          Kota Bandung terkenal sebagai surganya kuliner, terutama pangan lokal & jajanan kaki lima yang sudah ada turun-temurun. 
+          Sayangnya, banyak generasi muda mulai melupakan asal-usul dan cerita di balik makanan-makanan tersebut.
         </p>
-        <p class="text-lg leading-relaxed">
+        <p class="text-sm sm:text-base leading-relaxed text-gray-700">
           Website ini hadir sebagai <strong>media dokumentasi digital</strong> sekaligus panduan bagi wisatawan dan warga lokal 
           untuk mengenal lebih dalam makanan khas Bandung — mulai dari sejarah, bahan-bahan, hingga lokasi terbaik menikmatinya.
         </p>
         
-        <div class="bg-yellow-100 p-6 rounded-xl border-l-4 border-yellow-600">
-          <p class="font-semibold text-yellow-900">
+        <div class="bg-yellow-100 p-5 rounded-xl border-l-4 border-yellow-600">
+          <p class="font-semibold text-yellow-900 text-sm sm:text-base">
             “Makanan bukan sekadar mengenyangkan, tapi juga membawa cerita dan identitas budaya.”
           </p>
         </div>
       </div>
 
-      <!-- Foto/Gambar Ilustrasi (ganti sesuka hati) -->
-      <div>
-        <img src="https://placehold.co/600x500/fff3cd/8b5a2b?text=Kuliner+Bandung" 
+      <!-- Gambar Ilustrasi -->
+      <div data-aos="fade-left" data-aos-delay="200">
+        <img src="https://placehold.co/600x500/fff3cd/92400e?text=Kuliner+Bandung&font=poppins" 
              alt="Kuliner Bandung" 
              class="rounded-2xl shadow-2xl w-full object-cover border-8 border-white">
       </div>
     </div>
 
     <!-- Tim / Pembuat -->
-    <div class="mt-20 text-center bg-white rounded-2xl shadow-xl p-10 max-w-2xl mx-auto">
-      <h3 class="text-3xl font-bold text-yellow-700 mb-6">Dibuat Oleh</h3>
+    <div data-aos="fade-up" data-aos-delay="300" class="mt-16 text-center bg-white rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto">
+      <h3 class="text-2xl sm:text-3xl font-bold text-amber-700 mb-6">Dibuat Oleh</h3>
       <div class="flex flex-col items-center">
-        <div class="w-32 h-32 bg-gray-200 rounded-full border-4 border-yellow-500 mb-4 
-                        flex items-center justify-center text-5xl font-bold text-gray-500">
-          <!-- Ganti dengan foto kamu atau inisial -->
+        <div class="w-28 h-28 sm:w-32 sm:h-32 bg-gray-200 rounded-full border-4 border-yellow-500 mb-4 
+                        flex items-center justify-center text-4xl sm:text-5xl font-bold text-gray-500">
           ?
         </div>
-        <h4 class="text-2xl font-bold">Kelompok Bandung</h4>
-        <p class="text-gray-600">Mahasiswa / Pecinta Kuliner Bandung</p>
-        <p class="mt-4 text-gray-500">
+        <h4 class="text-xl sm:text-2xl font-bold">Kelompok Bandung</h4>
+        <p class="text-gray-600 text-sm sm:text-base">Mahasiswa / Pecinta Kuliner Bandung</p>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base font-medium">
           Ayo majukan bangsa dengan membeli makanan lokal !!
         </p>
       </div>
@@ -86,9 +89,20 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-yellow-700 text-white py-8 text-center mt-auto">
-    <p>© 2025 Pangan Lokal Bandung – Tugas / Proyek Pribadi</p>
+  <footer class="bg-amber-800 text-white py-6 mt-auto">
+    <div class="container mx-auto px-6 text-center text-sm">
+      <p>© 2025 Pangan Lokal Bandung – Tugas / Proyek Pribadi</p>
+    </div>
   </footer>
 
+  <!-- Script -->
+  <script>
+    AOS.init({ once: true, duration: 800 });
+
+    // Smooth masuk halaman
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '1';
+    });
+  </script>
 </body>
 </html>
