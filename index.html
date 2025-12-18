@@ -56,7 +56,17 @@
 
   <!-- Daftar Kuliner -->
   <section id="daftarMakanan" class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-bold text-center mb-8 text-amber-800">Daftar Kuliner</h2>
+    <h2 class="text-2xl font-bold text-center mb-4 text-amber-800">Daftar Kuliner</h2>
+    
+    <!-- Filter Kategori (dipindah ke sini) -->
+    <div class="flex justify-center mb-8">
+      <select id="kategoriFilter" class="px-6 py-3 rounded-full shadow-lg text-base focus:outline-none focus:ring-4 focus:ring-yellow-400 bg-white border border-amber-300">
+        <option value="semua">Semua Kategori</option>
+        <option value="makanan">Makanan</option>
+        <option value="minuman">Minuman</option>
+      </select>
+    </div>
+
     <div id="makananContainer" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
       <!-- Kartu akan muncul otomatis -->
     </div>
@@ -96,7 +106,7 @@
                  class="w-full h-32 sm:h-40 md:h-48 object-cover border-b-4 border-yellow-500">
             <div class="p-3 sm:p-4">
               <h3 class="font-bold text-amber-700 text-sm sm:text-base line-clamp-2">${item.nama}</h3>
-              <span class="text-xs text-amber-600 block mt-1">${item.kategori}</span>
+              <span class="text-xs text-amber-600 block mt-1">${item.kategori.charAt(0).toUpperCase() + item.kategori.slice(1)}</span>
             </div>
           </div>`;
         container.innerHTML += card;
@@ -104,16 +114,30 @@
       AOS.refresh();
     }
 
-    // Search
-    document.getElementById('searchInput').addEventListener('input', e => {
-      const q = e.target.value.toLowerCase().trim();
-      const hasil = q ? semuaMakanan.filter(m => 
-        m.nama.toLowerCase().includes(q) || 
-        m.kategori.toLowerCase().includes(q) ||
-        m.deskripsi.toLowerCase().includes(q)
-      ) : semuaMakanan;
+    // Search + Filter
+    function filterDanSearch() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const kat = document.getElementById('kategoriFilter').value;
+
+      let hasil = semuaMakanan;
+
+      if (kat !== 'semua') {
+        hasil = hasil.filter(m => m.kategori === kat);
+      }
+
+      if (q) {
+        hasil = hasil.filter(m => 
+          m.nama.toLowerCase().includes(q) || 
+          m.kategori.toLowerCase().includes(q) ||
+          m.deskripsi.toLowerCase().includes(q)
+        );
+      }
+
       tampilkanMakanan(hasil);
-    });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', filterDanSearch);
+    document.getElementById('kategoriFilter').addEventListener('change', filterDanSearch);
 
     // Smooth masuk halaman
     window.addEventListener('pageshow', () => {
