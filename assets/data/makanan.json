@@ -3,200 +3,248 @@
     "nama": "Seblak",
     "kategori": "makanan",
     "gambar": "https://image.idntimes.com/post/20220524/199413044-476812003415076-4990912791100959338-n-21d2d4b978b5ab7b3a5d99f29f7641d2.jpg",
-    "deskripsi": "Seblak adalah makanan pedas khas Bandung yang terbuat dari kerupuk basah (kerupuk aci) dimasak dengan bumbu cabai, bawang, kencur, dan tambahan topping seperti telur, ceker ayam, atau sosis.",
-    "sejarah": "Asal-usul seblak berasal dari masyarakat Sunda di Bandung sekitar tahun 2000-an. Awalnya jajanan pinggir jalan murah meriah, kini jadi ikon kuliner nasional. Populer karena rasa pedas gurih yang bikin nagih.",
-    "asal": "Daerah Ciwidey dan pinggiran Bandung Selatan"
+    "deskripsi": "Seblak adalah makanan pedas khas Bandung yang terbuat dari kerupuk basah dimasak dengan bumbu cabai, kencur, dan topping beragam.",
+    "sejarah": "Muncul sekitar tahun 2000-an sebagai jajanan pinggir jalan, kini ikon nasional dengan rasa pedas nagih.",
+    "asal": "Ciwidey dan Bandung Selatan"
   },
   {
     "nama": "Cireng",
     "kategori": "makanan",
     "gambar": "https://sayurbox-blog-stage.s3.amazonaws.com/uploads/2020/11/resepjajananpasar.jpg",
-    "deskripsi": "Cireng (aci digoreng) adalah camilan renyah dari tepung tapioka (aci) yang dibumbui, digoreng hingga krispi, sering disajikan dengan bumbu rujak atau sambal.",
-    "sejarah": "Sudah ada sejak era 1980-an di Bandung sebagai makanan rakyat. Terinspirasi dari dimsum Cina, tapi diadaptasi dengan bahan lokal Sunda. Kini variasinya banyak, seperti cireng isi atau premium.",
-    "asal": "Pasar malam dan kaki lima di seluruh Bandung"
+    "deskripsi": "Cireng adalah camilan renyah dari tepung tapioka yang digoreng, disajikan dengan sambal rujak atau bumbu kacang.",
+    "sejarah": "Ada sejak 1980-an, adaptasi lokal dari dimsum Cina dengan bahan Sunda.",
+    "asal": "Kaki lima seluruh Bandung"
   },
   {
     "nama": "Batagor",
     "kategori": "makanan",
     "gambar": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p2/80/2025/06/27/gdd-3523614001.jpg",
-    "deskripsi": "Batagor (baso tahu goreng) adalah bakso tahu yang digoreng, disiram bumbu kacang pedas manis, khas Jawa Barat.",
-    "sejarah": "Muncul di Bandung tahun 1960-an dari pedagang kaki lima. Singkatan dari 'baso tahu goreng', awalnya camilan sederhana untuk pekerja pabrik.",
-    "asal": "Jalan Braga dan sekitar Pasupati"
+    "deskripsi": "Batagor adalah bakso tahu goreng disiram bumbu kacang pedas manis.",
+    "sejarah": "Muncul 1960-an dari pedagang kaki lima untuk pekerja pabrik.",
+    "asal": "Jalan Braga dan Pasupati"
+  },
+  {
+    "nama": "Siomay",
+    "kategori": "makanan",
+    "gambar": "https://salimahfood.com/wp-content/uploads/2017/09/resep-siomay-ikan.jpg",
+    "deskripsi": "Siomay kukus isi ikan tenggiri, tahu, pare, kentang, kol, disiram saus kacang gurih.",
+    "sejarah": "Versi lokal dimsum dengan saus kacang khas Sunda, sering paket dengan batagor.",
+    "asal": "Pedagang keliling Bandung"
+  },
+  {
+    "nama": "Cilok",
+    "kategori": "makanan",
+    "gambar": "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/02/24/Screenshot_2023-02-24-07-31-42-97-2397458644.jpg",
+    "deskripsi": "Cilok adalah bola aci kenyal ditusuk, disiram bumbu kacang pedas atau kecap.",
+    "sejarah": "Camilan aci khas Bandung, populer sebagai street food murah meriah.",
+    "asal": "Kaki lima dan pasar malam Bandung"
+  },
+  {
+    "nama": "Cimol",
+    "kategori": "makanan",
+    "gambar": "https://thumb.viva.id/vivabanyuwangi/1265x711/2025/08/25/68ac07f606ded-cimol-bandung-goreng-renyah-sekali-coba-auto-ketagihan_banyuwangi.jpg",
+    "deskripsi": "Cimol adalah bola aci goreng renyah luar kenyal dalam, ditaburi bumbu pedas atau keju.",
+    "sejarah": "Varian cireng bulat, camilan kekinian Bandung yang nagih.",
+    "asal": "Pedagang kaki lima Bandung"
+  },
+  {
+    "nama": "Basreng",
+    "kategori": "makanan",
+    "gambar": "https://serbabandung.com/wp-content/uploads/2015/10/basreng.jpg",
+    "deskripsi": "Basreng adalah bakso goreng pedas renyah, camilan oleh-oleh favorit.",
+    "sejarah": "Camilan modern dari bakso ikan goreng, viral sebagai snack pedas.",
+    "asal": "Toko oleh-oleh Bandung"
   },
   {
     "nama": "Surabi",
     "kategori": "makanan",
     "gambar": "https://asset.kompas.com/crops/WaXdNz_AWhGZE8rPPe6xCaQQREM=/0x0:1000x667/750x500/data/photo/2021/05/22/60a8d0fe3c147.jpg",
-    "deskripsi": "Surabi (serabi) adalah kue tradisional dari tepung beras dan santan, dibakar di atas arang, sering ditaburi kinca (gula merah cair) atau oncom.",
-    "sejarah": "Warisan budaya Sunda sejak abad ke-19, terinspirasi dari makanan kerajaan Pajajaran. Dulu hidangan bangsawan, kini jajanan pasar.",
-    "asal": "Kampung Cireundeu dan pasar tradisional Bandung"
+    "deskripsi": "Surabi adalah pancake tradisional dari tepung beras santan, topping kinca atau oncom.",
+    "sejarah": "Warisan Sunda abad ke-19, dulu hidangan bangsawan.",
+    "asal": "Kampung Cireundeu"
   },
   {
     "nama": "Colenak",
     "kategori": "makanan",
     "gambar": "https://img-global.cpcdn.com/recipes/8a46dcc9a00f8034/1200x630cq80/photo.jpg",
-    "deskripsi": "Colenak (dicocol enak) adalah peuyeum (tape singkong) yang dibakar, disiram saus kinca gula merah kelapa yang manis legit.",
-    "sejarah": "Kuliner tradisional Sunda yang sudah ada sejak lama, sering jadi teman minum bajigur atau bandrek di malam hari.",
-    "asal": "Daerah Lembang dan sekitar Bandung"
-  },
-  {
-    "nama": "Brownies Kukus Amanda",
-    "kategori": "makanan",
-    "gambar": "https://wiratech.co.id/wp-content/uploads/2019/06/Cara-Membuat-Brownies-Kukus-Amanda.jpeg",
-    "deskripsi": "Brownies kukus lembut berlapis dengan topping keju atau cokelat, oleh-oleh ikonik Bandung yang moist dan manis.",
-    "sejarah": "Dipopulerkan oleh toko Amanda sejak tahun 2000-an, menjadi oleh-oleh wajib wisatawan ke Bandung.",
-    "asal": "Toko Amanda di daerah Dago dan Riau Bandung"
-  },
-  {
-    "nama": "Mie Yamin Baso",
-    "kategori": "makanan",
-    "gambar": "https://www.finnafood.com/blog/wp-content/uploads/2023/11/26.-Resep-Mie-yamin-komplet-khas-bandung.jpg",
-    "deskripsi": "Mie yamin manis dengan kuah kaldu ayam, topping baso, pangsit goreng, dan sawi, rasa gurih manis khas Bandung.",
-    "sejarah": "Varian mie baso ala Bandung yang manis, populer sejak pedagang kaki lima era 1980-an.",
-    "asal": "Kaki lima dan kedai di seluruh Bandung, seperti Mie Baso Akung"
+    "deskripsi": "Colenak adalah peuyeum bakar disiram kinca gula merah kelapa.",
+    "sejarah": "Tradisional Sunda, teman bajigur malam hari.",
+    "asal": "Lembang"
   },
   {
     "nama": "Combro",
     "kategori": "makanan",
     "gambar": "https://asset.kompas.com/crops/Nhvl8cwwCiDjVlkDMygf2Wc3cFM=/0x308:750x808/1200x800/data/photo/2021/09/29/6153cf36b71e7.jpg",
-    "deskripsi": "Combro (oncom di jero) adalah gorengan aci parut isi oncom pedas gurih, renyah di luar lembut di dalam.",
-    "sejarah": "Camilan tradisional Sunda, saudara kembar misro, populer sebagai jajanan pasar.",
-    "asal": "Pasar tradisional dan pedagang keliling Bandung"
-  },
-  {
-    "nama": "Cuanki",
-    "kategori": "makanan",
-    "gambar": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/08/01021725/Ini-Resep-Cuanki-Khas-Bandung-yang-Menggugah-Selera-.jpg",
-    "deskripsi": "Sup kuah kaldu bening dengan bakso ikan/ayam, batagor mini, tahu goreng, siomay, dan kerupuk.",
-    "sejarah": "Kuliner hangat khas Bandung untuk cuaca dingin, mirip baso aci tapi lebih berkuah.",
-    "asal": "Pedagang keliling dan kedai di Bandung"
-  },
-  {
-    "nama": "Peuyeum",
-    "kategori": "makanan",
-    "gambar": "https://www.shutterstock.com/image-photo/peuyeum-traditional-bandung-food-made-260nw-2319178043.jpg",
-    "deskripsi": "Peuyeum adalah tape singkong fermentasi manis khas Sunda, sering dimakan langsung atau dibakar jadi colenak.",
-    "sejarah": "Makanan fermentasi tradisional Sunda sejak lama, menggunakan ragi lokal.",
-    "asal": "Lembang dan Ciwidey Bandung"
-  },
-  {
-    "nama": "Bandros",
-    "kategori": "makanan",
-    "gambar": "https://www.shutterstock.com/image-photo/kue-pancong-gandos-bandros-indonesian-260nw-2659757819.jpg",
-    "deskripsi": "Bandros (kue pancong) adalah kue tradisional dari parutan kelapa dan tepung beras, dibakar di cetakan setengah bulan.",
-    "sejarah": "Jajanan pasar tradisional Sunda, sering dijual keliling.",
+    "deskripsi": "Combro adalah gorengan singkong parut isi oncom pedas.",
+    "sejarah": "Camilan tradisional Sunda, saudara misro.",
     "asal": "Pasar tradisional Bandung"
-  },
-  {
-    "nama": "Nasi Timbel",
-    "kategori": "makanan",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/1/12/NasiTimbelAyamPenyet.JPG",
-    "deskripsi": "Nasi hangat dibungkus daun pisang dengan lauk ikan asin, ayam goreng, sambal, dan lalapan.",
-    "sejarah": "Makanan khas Sunda yang sederhana namun kaya rasa, populer di rumah makan Sunda.",
-    "asal": "Rumah makan Sunda di seluruh Bandung"
-  },
-  {
-    "nama": "Mie Kocok",
-    "kategori": "makanan",
-    "gambar": "https://img.freepik.com/premium-photo/close-up-mie-kocok-bandung-traditional-sundanese-dish-beef-noodle-soup-from-bandung-west-java-served-white-bowl_511235-2370.jpg",
-    "deskripsi": "Mie kocok adalah mie dengan kuah kaldu sapi kental, kikil, bakso, dan tauge.",
-    "sejarah": "Kuliner legendaris Bandung sejak puluhan tahun lalu.",
-    "asal": "Kedai Mie Kocok Persib dan sekitarnya"
-  },
-  {
-    "nama": "Pisang Bolen",
-    "kategori": "makanan",
-    "gambar": "https://c8.alamy.com/comp/2JF5R34/bolen-pisang-kartika-sari-or-bolen-bandung-is-banana-wrapped-with-puff-pastry-popular-west-java-oleh-oleh-copy-space-for-text-or-advertisement-2JF5R34.jpg",
-    "deskripsi": "Pisang bolen adalah pastry puff isi pisang dan keju/cokelat, renyah dan manis.",
-    "sejarah": "Oleh-oleh modern Bandung dari Kartika Sari sejak 1980-an.",
-    "asal": "Toko Kartika Sari Bandung"
   },
   {
     "nama": "Misro",
     "kategori": "makanan",
     "gambar": "https://www.shutterstock.com/image-photo/misro-traditional-indonesian-snack-made-260nw-2181947255.jpg",
-    "deskripsi": "Misro (amis di jero) adalah gorengan singkong parut isi gula merah yang meleleh.",
-    "sejarah": "Saudara combro, camilan manis tradisional Sunda.",
-    "asal": "Jajanan pasar dan kaki lima Bandung"
+    "deskripsi": "Misro adalah gorengan singkong parut isi gula merah meleleh.",
+    "sejarah": "Varian manis combro, camilan pasar Sunda.",
+    "asal": "Kaki lima Bandung"
+  },
+  {
+    "nama": "Cuanki",
+    "kategori": "makanan",
+    "gambar": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/08/01021725/Ini-Resep-Cuanki-Khas-Bandung-yang-Menggugah-Selera-.jpg",
+    "deskripsi": "Cuanki adalah sup kaldu dengan batagor mini, siomay, tahu, bakso.",
+    "sejarah": "Kuliner hangat untuk cuaca dingin Bandung.",
+    "asal": "Pedagang keliling"
+  },
+  {
+    "nama": "Mie Kocok",
+    "kategori": "makanan",
+    "gambar": "https://img.freepik.com/premium-photo/close-up-mie-kocok-bandung-traditional-sundanese-dish-beef-noodle-soup-from-bandung-west-java-served-white-bowl_511235-2370.jpg",
+    "deskripsi": "Mie kocok adalah mie dengan kuah kaldu sapi kental, kikil, bakso.",
+    "sejarah": "Legendaris sejak puluhan tahun.",
+    "asal": "Kedai Mie Kocok Persib"
+  },
+  {
+    "nama": "Nasi Timbel",
+    "kategori": "makanan",
+    "gambar": "https://upload.wikimedia.org/wikipedia/commons/1/12/NasiTimbelAyamPenyet.JPG",
+    "deskripsi": "Nasi timbel adalah nasi bungkus daun pisang dengan lauk ayam goreng, ikan asin, sambal.",
+    "sejarah": "Makanan khas Sunda sederhana kaya rasa.",
+    "asal": "Rumah makan Sunda"
+  },
+  {
+    "nama": "Nasi Tutug Oncom",
+    "kategori": "makanan",
+    "gambar": "https://upload.wikimedia.org/wikipedia/commons/6/61/Makanan_Khas_Sunda.jpg",
+    "deskripsi": "Nasi tutug oncom adalah nasi campur oncom goreng gurih pedas.",
+    "sejarah": "Ikonik Sunda dengan aroma khas oncom.",
+    "asal": "Warung Sunda Bandung"
   },
   {
     "nama": "Lotek",
     "kategori": "makanan",
     "gambar": "https://c8.alamy.com/comp/3B5D3DA/lotek-bandung-sundanese-traditional-healthy-salad-made-from-various-boiled-vegetable-with-spicy-peanut-sauce-3B5D3DA.jpg",
-    "deskripsi": "Lotek adalah salad sayuran rebus dengan bumbu kacang pedas manis, mirip gado-gado.",
+    "deskripsi": "Lotek adalah salad sayuran rebus dengan bumbu kacang pedas manis.",
     "sejarah": "Makanan sehat tradisional Sunda.",
-    "asal": "Pedagang keliling dan warung Bandung"
+    "asal": "Pedagang keliling"
   },
   {
     "nama": "Karedok",
     "kategori": "makanan",
     "gambar": "https://www.shutterstock.com/image-photo/karedok-raw-vegetable-salad-peanut-sauce-260nw-2344485715.jpg",
-    "deskripsi": "Karedok adalah salad sayuran mentah dengan bumbu kacang kencur yang segar.",
-    "sejarah": "Varian lotek yang mentah, khas Sunda.",
-    "asal": "Warung makan Sunda Bandung"
+    "deskripsi": "Karedok adalah salad sayuran mentah dengan bumbu kacang kencur segar.",
+    "sejarah": "Varian lotek mentah khas Sunda.",
+    "asal": "Warung Sunda"
+  },
+  {
+    "nama": "Kupat Tahu",
+    "kategori": "makanan",
+    "gambar": "https://imgx.sonora.id/crop/0x0:0x0/x/photo/2020/11/26/479503970.jpg",
+    "deskripsi": "Kupat tahu adalah ketupat tahu dengan saus kacang petis, tauge, bakwan.",
+    "sejarah": "Sarapan khas Bandung dengan bumbu kental.",
+    "asal": "Warung kupat tahu legendaris"
+  },
+  {
+    "nama": "Gepuk",
+    "kategori": "makanan",
+    "gambar": "https://awsimages.detik.net.id/community/media/visual/2021/09/06/resep-gepuk-daging-khas-sunda_43.jpeg?w=1200",
+    "deskripsi": "Gepuk adalah daging sapi manis empuk goreng dengan bumbu kelapa.",
+    "sejarah": "Lauk khas Sunda manis gurih.",
+    "asal": "Rumah makan Sunda"
+  },
+  {
+    "nama": "Peuyeum",
+    "kategori": "makanan",
+    "gambar": "https://www.shutterstock.com/image-photo/peuyeum-traditional-bandung-food-made-260nw-2319178043.jpg",
+    "deskripsi": "Peuyeum adalah tape singkong fermentasi manis.",
+    "sejarah": "Makanan fermentasi tradisional Sunda.",
+    "asal": "Lembang dan Ciwidey"
+  },
+  {
+    "nama": "Bandros",
+    "kategori": "makanan",
+    "gambar": "https://www.shutterstock.com/image-photo/kue-pancong-gandos-bandros-indonesian-260nw-2659757819.jpg",
+    "deskripsi": "Bandros adalah kue pancong dari kelapa parut dibakar cetakan bulan sabit.",
+    "sejarah": "Jajanan pasar tradisional Sunda.",
+    "asal": "Pasar tradisional"
+  },
+  {
+    "nama": "Pisang Bolen",
+    "kategori": "makanan",
+    "gambar": "https://c8.alamy.com/comp/2JF5R34/bolen-pisang-kartika-sari-or-bolen-bandung-is-banana-wrapped-with-puff-pastry-popular-west-java-oleh-oleh-copy-space-for-text-or-advertisement-2JF5R34.jpg",
+    "deskripsi": "Pisang bolen adalah pastry puff isi pisang keju/cokelat.",
+    "sejarah": "Oleh-oleh modern dari Kartika Sari sejak 1980-an.",
+    "asal": "Toko Kartika Sari"
+  },
+  {
+    "nama": "Brownies Kukus Amanda",
+    "kategori": "makanan",
+    "gambar": "https://wiratech.co.id/wp-content/uploads/2019/06/Cara-Membuat-Brownies-Kukus-Amanda.jpeg",
+    "deskripsi": "Brownies kukus lembut moist dengan topping keju/cokelat.",
+    "sejarah": "Oleh-oleh ikonik sejak 2000-an.",
+    "asal": "Toko Amanda Dago"
+  },
+  {
+    "nama": "Mie Yamin Baso",
+    "kategori": "makanan",
+    "gambar": "https://www.finnafood.com/blog/wp-content/uploads/2023/11/26.-Resep-Mie-yamin-komplet-khas-bandung.jpg",
+    "deskripsi": "Mie yamin manis gurih dengan baso dan pangsit.",
+    "sejarah": "Varian mie baso manis ala Bandung.",
+    "asal": "Kedai mie baso"
   },
   {
     "nama": "Gehu",
     "kategori": "makanan",
     "gambar": "https://c8.alamy.com/comp/2J18NK0/indonesian-street-food-fried-tofu-filled-with-vegetablestahu-isi-served-with-fresh-green-chili-2J18NK0.jpg",
-    "deskripsi": "Gehu (tahu gejrot) adalah tahu goreng isi sayuran dengan saus pedas asam.",
-    "sejarah": "Jajanan kaki lima khas Bandung.",
+    "deskripsi": "Gehu adalah tahu goreng isi sayuran saus pedas asam.",
+    "sejarah": "Jajanan kaki lima khas.",
     "asal": "Pinggir jalan Bandung"
-  },
-  {
-    "nama": "Sate Maranggi",
-    "kategori": "makanan",
-    "gambar": "https://www.shutterstock.com/image-photo/sate-maranggi-satay-grilled-marinated-260nw-2630616747.jpg",
-    "deskripsi": "Sate sapi empuk tanpa bumbu kacang, disajikan dengan sambal tomat.",
-    "sejarah": "Asal Purwakarta dekat Bandung, populer sebagai sate khas Sunda.",
-    "asal": "Purwakarta dan Cibungbulang"
   },
   {
     "nama": "Bajigur",
     "kategori": "minuman",
     "gambar": "https://asset.kompas.com/crops/Q8gAMW15GUuW65hkosrxWwThn2M=/111x83:735x499/1200x800/data/photo/2020/03/28/5e7eb826a19c9.jpg",
-    "deskripsi": "Bajigur adalah minuman hangat dari santan, gula aren, jahe, dan serai, disajikan dengan kolang-kaling atau tape.",
-    "sejarah": "Minuman tradisional Sunda sejak zaman kerajaan, digunakan untuk menghangatkan tubuh di udara dingin Bandung.",
-    "asal": "Pegunungan sekitar Lembang"
+    "deskripsi": "Bajigur adalah minuman hangat santan gula aren jahe.",
+    "sejarah": "Tradisional untuk menghangatkan tubuh.",
+    "asal": "Lembang"
   },
   {
     "nama": "Bandrek",
     "kategori": "minuman",
     "gambar": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p2/255/2024/10/24/Ilustrasi-Bandrek-1143950410.jpg",
-    "deskripsi": "Bandrek adalah wedang jahe hangat dengan gula aren, kayu manis, cengkeh, dan serai, sering ditambah kacang atau rempah lain.",
-    "sejarah": "Asli dari Sunda sejak abad ke-16, dibuat untuk obat tradisional dan penghangat.",
-    "asal": "Desa-desa pegunungan Bandung Utara"
+    "deskripsi": "Bandrek adalah wedang jahe dengan rempah gula aren.",
+    "sejarah": "Obat tradisional sejak abad ke-16.",
+    "asal": "Bandung Utara"
   },
   {
     "nama": "Es Cendol",
     "kategori": "minuman",
     "gambar": "https://asset.kompas.com/crops/t3tdD3PwNMMiPxm7WKH-_qq4MmM=/0x0:1000x667/1200x800/data/photo/2023/03/12/640d6eac51567.jpg",
-    "deskripsi": "Minuman segar dari cendol hijau tepung beras, santan kental, gula aren cair, dan es serut.",
-    "sejarah": "Minuman tradisional Sunda yang menyegarkan di cuaca panas, sudah ada sejak zaman dahulu.",
-    "asal": "Pinggir jalan dan pasar tradisional Bandung"
+    "deskripsi": "Es cendol adalah minuman segar cendol santan gula aren.",
+    "sejarah": "Tradisional menyegarkan.",
+    "asal": "Pasar tradisional"
   },
   {
     "nama": "Es Oyen",
     "kategori": "minuman",
     "gambar": "https://static.vecteezy.com/system/resources/previews/023/351/212/large_2x/es-campur-or-es-oyen-is-mix-fruit-with-shaved-ice-photo.jpg",
-    "deskripsi": "Es oyen adalah es campur buah dengan alpukat, kelapa muda, pacar cina, dan sirup manis.",
-    "sejarah": "Minuman segar legendaris Bandung sejak puluhan tahun.",
-    "asal": "Es Oyen Pak Oyen di Pasar Baru Bandung"
+    "deskripsi": "Es oyen adalah es campur buah alpukat kelapa muda.",
+    "sejarah": "Legendaris segar Bandung.",
+    "asal": "Pasar Baru"
   },
   {
     "nama": "Es Durian",
     "kategori": "minuman",
     "gambar": "https://www.shutterstock.com/image-photo/closeup-durian-ice-cream-served-260nw-2651194353.jpg",
-    "deskripsi": "Es durian adalah es serut dengan daging durian asli, santan, dan susu.",
-    "sejarah": "Minuman premium khas Bandung untuk pecinta durian.",
-    "asal": "Kedai es durian di Dago dan sekitarnya"
+    "deskripsi": "Es durian adalah es serut dengan durian asli santan.",
+    "sejarah": "Premium untuk pecinta durian.",
+    "asal": "Dago"
   },
   {
     "nama": "Es Cincau",
     "kategori": "minuman",
     "gambar": "https://thumbs.dreamstime.com/b/traditional-indonesian-es-cincau-dessert-drink-refreshing-bowl-iced-grass-jelly-featuring-dark-green-creamy-coconut-milk-409820891.jpg",
-    "deskripsi": "Es cincau hijau atau hitam dengan santan dan gula aren cair.",
-    "sejarah": "Minuman tradisional Sunda yang menyegarkan.",
-    "asal": "Pedagang keliling Bandung"
+    "deskripsi": "Es cincau adalah cincau hijau/hitam santan gula aren.",
+    "sejarah": "Tradisional menyegarkan Sunda.",
+    "asal": "Pedagang keliling"
   }
 ]

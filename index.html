@@ -19,7 +19,7 @@
 </head>
 <body class="bg-amber-50 text-gray-800 min-h-screen flex flex-col" style="opacity:0; transition:opacity 0.5s">
 
-  <!-- Navbar -->
+  <!-- Navbar (kembali ke versi lama, tanpa Games & Feedback) -->
   <nav class="bg-yellow-600 text-white sticky top-0 z-50 shadow-lg">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <h1 class="text-lg font-bold">Bandung Pangan Lokal</h1>
@@ -54,11 +54,36 @@
     </div>
   </section>
 
+  <!-- 2 Card Interaktif: Games & Feedback (baru ditambah di sini) -->
+  <section data-aos="fade-up" class="container mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+      <!-- Card Games -->
+      <a href="https://wayground.com/join?gc=38609702&source=liveDashboard" target="_blank" class="card-hover block">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden text-center p-8">
+          <img src="https://media.istockphoto.com/id/1488144839/vector/quiz-logo-quiz-time-label-with-question-mark-quiz-emblem-for-business-marketing-and.jpg?s=612x612&w=0&k=20&c=eYgHRl9M7FtpLRCS-ZKABj3IU5E62cgGUTCY2HN5JO8=" alt="Icon Kuis Games" class="w-32 h-32 mx-auto mb-4 object-contain">
+          <h3 class="text-2xl font-bold text-amber-700 mb-2">Main Kuis Kuliner!</h3>
+          <p class="text-gray-600">Uji pengetahuanmu tentang makanan khas Bandung. Seru & edukatif!</p>
+        </div>
+      </a>
+      
+      <!-- Card Feedback (ganti href dengan link Google Form Anda nanti) -->
+      <a href="https://forms.gle/XXXXXXXXXXXXXXX" target="_blank" class="card-hover block">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden text-center p-8">
+          <img src="https://previews.123rf.com/images/sanek13744/sanek137442210/sanek13744221000050/192458508-online-survey-sign-icon-in-comic-style-questionnaire-vector-cartoon-illustration-on-white-isolated.jpg" alt="Icon Feedback" class="w-32 h-32 mx-auto mb-4 object-contain">
+          <h3 class="text-2xl font-bold text-amber-700 mb-2">Berikan Feedback</h3>
+          <p class="text-gray-600">Bantu kami improve situs ini dengan masukan Anda!</p>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+
   <!-- Daftar Kuliner -->
   <section id="daftarMakanan" class="container mx-auto px-6 py-10">
     <h2 class="text-2xl font-bold text-center mb-4 text-amber-800">Daftar Kuliner</h2>
     
-    <!-- Filter Kategori (dipindah ke sini) -->
+    <!-- Filter Kategori -->
     <div class="flex justify-center mb-8">
       <select id="kategoriFilter" class="px-6 py-3 rounded-full shadow-lg text-base focus:outline-none focus:ring-4 focus:ring-yellow-400 bg-white border border-amber-300">
         <option value="semua">Semua Kategori</option>
@@ -79,7 +104,7 @@
     </div>
   </footer>
 
-  <!-- Script -->
+  <!-- Script (tetap sama) -->
   <script>
     AOS.init({ once: true, duration: 600 });
 
@@ -114,7 +139,6 @@
       AOS.refresh();
     }
 
-    // Search + Filter
     function filterDanSearch() {
       const q = document.getElementById('searchInput').value.toLowerCase().trim();
       const kat = document.getElementById('kategoriFilter').value;
@@ -139,7 +163,6 @@
     document.getElementById('searchInput').addEventListener('input', filterDanSearch);
     document.getElementById('kategoriFilter').addEventListener('change', filterDanSearch);
 
-    // Smooth masuk halaman
     window.addEventListener('pageshow', () => {
       document.body.style.opacity = '1';
     });
